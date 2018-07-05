@@ -1,0 +1,318 @@
+<html data-n-head="dir,lang" dir="ltr" lang="pt_BR" class="wf-ubuntu-n7-active wf-suezone-n4-active wf-ubuntu-n4-active wf-ubuntu-n3-active wf-ubuntu-n5-active wf-active">
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+<meta data-n-head="true" content="IE=edge" http-equiv="X-UA-Compatible">
+<meta data-n-head="true" content="pt_BR" name="og:locale">
+<meta data-n-head="true" content="index,follow" name="googlebot">
+<meta data-n-head="true" content="index,follow,noodp" name="robots">
+<meta data-n-head="true" content="summary_large_image" name="twitter:card">
+<meta data-n-head="true" content="@nglauzer" name="twitter:site">
+<meta data-n-head="true" content="Brazil" name="country">
+<meta data-n-head="true" content="7 days" name="revisit-after">
+<meta data-n-head="true" content="yes" name="mobile-web-app-capable">
+<meta data-n-head="true" content="Analista de Suporte / Analista de Segurança da Informação em Barueri/SP" name="application-name">
+<meta data-n-head="true" content="Visual Studio Code - Insiders" name="generator">
+<meta data-n-head="true" content="telephone=no" name="format-detection">
+<meta data-n-head="true" content="pt_BR-PR" name="geo.region">
+<meta data-n-head="true" content="Barueri/São Paulo" name="geo.placename">
+<meta data-n-head="true" content="/browserconfig.xml" name="msapplication-config">
+<meta data-n-head="true" data-hid="charset" charset="utf-8">
+<meta data-n-head="true" content="yes" name="apple-mobile-web-app-capable" data-hid="apple-mobile-web-app-capable">
+<meta data-n-head="true" content="default" name="apple-mobile-web-app-status-bar-style" data-hid="apple-mobile-web-app-status-bar-style">
+<meta data-n-head="true" content="Entendendo comandos básicos do Linux | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP" name="apple-mobile-web-app-title" data-hid="apple-mobile-web-app-title">
+<meta property="og:title" content="Entendendo comandos básicos do Linux | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP">
+<meta data-n-head="true" content="Andrey Glauzer" name="author" data-hid="author">
+<meta data-n-head="true" content="#4dba87" name="theme-color" data-hid="theme-color">
+<meta data-n-head="true" content="Os comandos são básicos, mas são de extrema importância para um administrador." name="og:description" data-hid="og:description" property="og:description">
+<meta data-n-head="true" content="profile" data-hid="og:type" property="og:type">
+<meta property="og:image" content="https://andreyglauzer/files/images/articles/2018/2018-04-14-entendendo-comandos-basicos-do-linux/CH932.png">
+<meta property="og:image:type" content="/files/images/articles/2018/2018-04-14-entendendo-comandos-basicos-do-linux/CH932.png">
+<meta data-n-head="true" content="pfSense, Linux, SonicWall, Fortinet, Python, DigitalOcean, Wordpress, FreeBSD, Magento, Debian, Ubuntu, OpenSUSE, Zabbix, Raspberry, Acronis, Bitdefender, Switchs Cisco, ESXI, Hyper-V, Macafee, Symantec Backup, Veeam Backup, HTML5, CSS3, JavaScript, PHP, Apache, Windows Server, Git, GitHub, Docker, Photoshop, Amazon Webservices" name="keyword" data-hid="keyword">
+<meta data-n-head="true" content="/files/images/social/social.png" name="twitter:image" data-hid="twitter:image">
+<meta data-hid="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" data-n-head="true">
+<title>Entendendo comandos básicos do Linux | Andrey Glauzer | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP</title>
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="Andrey Glauzer">
+	<meta property="article:section" content="BASH">
+	<meta property="article:tag" content="BASHLinux">
+	<meta property="article:published_time" content="date_time">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/files/images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/files/images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/files/images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/files/images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/files/images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/files/images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/files/images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/files/images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/files/images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/files/images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/files/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/files/images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/files/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/files/images/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/files/images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+		<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115207750-1"></script>
+	<script src="/files/js/google.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/files/css/posts.css">
+	<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700%7CSuez+One" media="all">
+	<link rel="stylesheet" href="data:text/css;charset=utf-8;base64,LmNmLXR0LWVsZW1lbnQgLmNmLXR0LWNvbnRlbnQgewogIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7CiAgICAgIC1tcy1mbGV4LWFsaWduOiBjZW50ZXI7CiAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyOwogIGNvbG9yOiB3aGl0ZTsKICBkaXNwbGF5OiAtd2Via2l0LWJveDsKICBkaXNwbGF5OiAtbXMtZmxleGJveDsKICBkaXNwbGF5OiBmbGV4OwogIHBhZGRpbmc6IDAuMmVtIDAuN2VtIDAuMmVtIDFlbTsKfQoKLmNmLXR0LWNvbnRlbnQ6aG92ZXIgewogIGN1cnNvcjogcG9pbnRlcjsKfQoKLmNmLXR0LWNvbnRlbnQgPiBzdmcgewogIGRpc3BsYXk6IGlubGluZS1ibG9jazsKICBoZWlnaHQ6IDIuNWVtOwogIHdpZHRoOiAyLjVlbTsKfQo=">
+</head>
+
+
+
+	</head>
+	<body data-n-head="class">
+		<div class="__andreyglauzer">
+			<div>
+				<a href="#MainContent" tabindex="1" class="SkipToContent sr-only sr-only-focusable"><span class="skiplink-text">Pular para o conteúdo principal</span></a>
+				<header id="header-nav" class="header header--fixed">
+   <a href="/" tabindex="-1" role="button" class="header__back nuxt-link-active">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#435466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+         <line x1="20" y1="12" x2="4" y2="12"></line>
+         <polyline points="10 18 4 12 10 6"></polyline>
+      </svg>
+      <span>Ir para Home</span>
+   </a>
+   <div>
+      <button role="button" id="menumobile" tabindex="1" aria-label="Abrir navegação principal" aria-controls="navigation" class="NavbarToggle"><span></span><span></span><span></span><span></span><span></span><span></span></button>
+      <nav role="navigation" id="navigation" class="Navbar">
+         <ul role="menu" class="Navbar__nav">
+            <li role="menuitem" class="Navbar__nav-item">
+               <a href="/sobre" title="Sobre" role="link" class="Navbar__nav-link">
+               Sobre
+               </a>
+            </li>
+            <li role="menuitem" class="Navbar__nav-item">
+               <a href="/now" title="Now" role="link" class="Navbar__nav-link">
+               Now
+               </a>
+            </li>
+            <li role="menuitem" class="Navbar__nav-item">
+               <a href="/blog" title="Blog" role="link" class="Navbar__nav-link nuxt-link-exact-active nuxt-link-active">
+               Blog
+               </a>
+            </li>
+            <li role="menuitem" class="Navbar__nav-item">
+               <a href="/projetos" title="Projetos" role="link" class="Navbar__nav-link">
+               Projetos
+               </a>
+            </li>
+            <li class="Navbar__nav-item">
+               <span role="button" class="link-button link-button--ghost link-button--small">
+                  <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511950597632" target="_blank" class="link-button__link">
+                     <svg aria-labelledby="whatsapp-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
+                        <title id="whatsapp-icon">WhatsApp icon</title>
+                        <path d="M17.498 14.382c-.301-.15-1.767-.867-2.04-.966-.273-.101-.473-.15-.673.15-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.172-.015-.371-.015-.571-.015-.2 0-.523.074-.797.359-.273.3-1.045 1.02-1.045 2.475s1.07 2.865 1.219 3.075c.149.195 2.105 3.195 5.1 4.485.714.3 1.27.48 1.704.629.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345m-5.446 7.443h-.016c-1.77 0-3.524-.48-5.055-1.38l-.36-.214-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-5.445 4.455-9.885 9.942-9.885 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99-.004 5.444-4.46 9.885-9.935 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411"></path>
+                     </svg>
+                     Quer bater um papo? Então cola ae!
+                  </a>
+               </span>
+            </li>
+         </ul>
+      </nav>
+   </div>
+</header>
+
+				<div class="MainContent" id="MainContent">
+					<div class="home">
+						<header class="pageHeader pageHeader--background" data-src="/files/images/articles/2018/2018-04-14-entendendo-comandos-basicos-do-linux/CH932.png" lazy="loaded" style="background-image: url(&quot;/files/images/articles/2018/2018-04-14-entendendo-comandos-basicos-do-linux/CH932.png&quot;);">
+   <div class="pageHeader__inner">
+      <div>
+         <figure itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject" class="pageHeader__image">
+            <meta itemprop="url" content="/files/images/articles/2018/2018-04-14-entendendo-comandos-basicos-do-linux/CH932.png">
+            <img src="/files/images/articles/2018/2018-04-14-entendendo-comandos-basicos-do-linux/CH932.png" alt="Imagem de: Entendendo comandos básicos do Linux">
+         </figure>
+         <div class="container">
+            <h1 itemprop="headline" class="pageHeader__title">Entendendo comandos básicos do Linux</h1>
+            <ol itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+               <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem" class="breadcrumb__item">
+                  <a href="/" class="breadcrumb__link nuxt-link-active" title="Home" itemprop="item">
+                     <span itemprop="name">Home</span>
+                     <meta itemprop="position" content="1">
+                  </a>
+                  <span class="breadcrumb__divider">»</span>
+               </li>
+               <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem" class="breadcrumb__item">
+                  <a href="/blog" class="breadcrumb__link" title="Blog" itemprop="item">
+                     <span itemprop="name">Blog</span>
+                     <meta itemprop="position" content="2">
+                  </a>
+                  <span class="breadcrumb__divider">»</span>
+               </li>
+               <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem" class="breadcrumb__item">
+                  <a href="/programador-a-comunidade-precisa-de-voce" class="breadcrumb__link nuxt-link-exact-active nuxt-link-active breadcrumb__link--active" title="Programador a comunidade precisa de você!" itemprop="item">
+                     <span itemprop="name">Entendendo comandos básicos do Linux</span>
+                     <meta itemprop="position" content="3">
+                  </a>
+                  <span class="breadcrumb__divider">»</span>
+               </li>
+            </ol>
+            <p itemprop="description" class="pageHeader__description">Os comandos são básicos, mas são de extrema importância para um administrador.</p>
+            <div class="pageHeader__meta">
+               <span itemprop="datePublished" content="2017-03-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                     <line x1="16" y1="2" x2="16" y2="6"></line>
+                     <line x1="8" y1="2" x2="8" y2="6"></line>
+                     <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <strong>Publicado em Abril de 2018</strong>
+               </span>
+               <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                     <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  <strong>por <span itemprop="author">Andrey Glauzer</span></strong>
+               </span>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+						<main itemprop="articleBody" role="main">
+							<div class="Single__body">
+								<p>Como já dizia a minha mãe “ninguém nasce sabendo”, portanto, começar das coisas básicas é a base para entender as coisas grandes. Entrei em uma nova jornada, onde pretendo tirar minhas certificações Linux de vez, já faz um tempo que estou observando o mercado de trabalho e está se tornando cada vez mais importante a comprovação do seu conhecimento através de certificações.</p>
+
+<p>E para fixar na cabeça, pretendo me aprofundar mais em cada assunto que estou aprendendo, então hoje vou começar por comandos básicos, mas muito básicos em um sistema Linux, porém muito utilizados no dia-a-dia de um administrador de servidores, parece brincadeira, mas é pura verdade.
+Os comandos que vou falar são: <code class="highlighter-rouge">pwd, cd e ls</code>. É isso mesmo, esses comandos bem fajutos, mas eu gostaria de me aprofundar mais em cada um deles.</p>
+
+<h2 id="comando-pwd">Comando pwd</h2>
+
+<p>Começando pelo o comando <code class="highlighter-rouge">pwd</code>, ele é o responsável para você se encontrar, basicamente o seu GPS, com ele é possível saber exatamente o local onde você está. Mas como assim? Simples, vamos na premissa que você tenha que encontrar um arquivo no seu servidor Linux, logo será necessário entrar em vários diretórios e subdiretórios, então finalmente é encontrado o arquivo, só que ai o seu chefe vai e te pergunta, <code class="highlighter-rouge">qual o caminho absoluto do arquivo, Andrey?</code>. Ai que nosso amigo <code class="highlighter-rouge">pwd</code> entra, digitando ele logo o mesmo vai retorna o caminho absoluto onde você está.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~# pwd
+/var/lib/colord/icc
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Lembrete</strong>:  o <code class="highlighter-rouge">#</code> é só para saber que se trata de um comando, não precisa usar ele na hora de digitar o comando no seu Bash.</p>
+</blockquote>
+
+<h2 id="comando-cd">Comando cd</h2>
+
+<p>Já o comando cd é utilizado para entrar em diretórios. Quando se entra em um sistema Linux, você já cai direto no diretório home, do seu usuário, então para que você explore os demais arquivos existentes em seu sistema operacional é necessário navegar entre eles, vamos imaginar que tenha uma pasta chamada músicas dentro do diretório home, se for digitado cd músicas, você vai entrar na pasta andrey, e se for digitado o <code class="highlighter-rouge">pwd</code> o resultado será <code class="highlighter-rouge">/home/andrey/músicas/</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~# cd músicas
+~# pwd
+/home/andrey/músicas/
+</code></pre></div></div>
+
+<p>Aguenta aí que a gente ainda não acabou, estou escrevendo bastante porque quero deixar o mais claro possível cada um desses comandos.</p>
+
+<h2 id="comando-ls">Comando ls</h2>
+
+<p>E por fim o comando <code class="highlighter-rouge">ls</code>, esse aí lista tudo que tem dentro de um diretório, ou seja, se você estiver dentro de uma pasta e tiver dúvida sobre o conteúdo dela, digitando <code class="highlighter-rouge">ls</code>, será exibido para você tudo que está dentro dela, esse comando ls, existe alguns complementos, que é para melhorar o nosso resultado, como por exemplo o <code class="highlighter-rouge">ls -a</code> que exibi também os arquivos considerado ocultos no Linux. Para saber todos os complementos do comando ls digite <code class="highlighter-rouge">ls --help</code>, então será exibido tudo que ele pode fazer. Lembrando que usar o <code class="highlighter-rouge">--help</code> em qualquer cum dos outros comandos funciona, e a função é a mesma.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~# ls -a
+.  ..  .bashrc  .profile
+</code></pre></div></div>
+
+<p>Por hoje é apenas isso, espero que tenha ajudado você à entender melhor cada um desses comandos.</p>
+
+
+							</div>
+							<div class="UserInfo container--small" itemscope="" itemtype="http://schema.org/Person" >
+   <figure class="UserInfo__figure" ><img alt="Imagem de perfil do autor"  data-src="/files/images/about/blog-author.jpg" src="/files/images/about/blog-author.jpg" lazy="loaded"></figure>
+   <div class="UserInfo__bio" >
+      <h4 >O autor</h4>
+      <p ><strong ><a href="/sobre" title="Meu nome é Andrey Glauzer (muito prazer)" itemprop="name"  class="">Andrey Glauzer</a></strong>, 25 anos, sou <strong itemprop="jobTitle" >analista de segurnaça da informação</strong> apaixonado po <strong >Linux</strong> e entusiasta em desenvolvimento. Esta sempre em busca de automatizar tarefas do dia-a-dia e de um bom café.</p>
+   </div>
+</div>
+							<aside class="comments">
+   <div class="comments__inner container--small">
+      <h3>Gostou? Comenta ae!</h3>
+      <div class="comments__disqus">
+         <!---->
+         <div>
+            <div id="disqus_thread"></div>
+            <script>
+               (function() {
+                   var d = document, s = d.createElement('script');
+                   s.src = '//andreyglauzer-1.disqus.com/embed.js';
+                   s.setAttribute('data-timestamp', +new Date());
+                   (d.head || d.body).appendChild(s);
+               })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+         </div>
+      </div>
+   </div>
+</aside>
+						</main>
+					</div>
+				</div>
+				<footer class="footer">
+   <div class="CtaWhatsApp" >
+      <h3 >Entre em contato</h3>
+      <a href="mailto:nglauzer@gmail.com" >nglauzer[arroba]gmail.com</a>
+      <ul class="social" >
+         <li class="social__item">
+            <a href="https://twitter.com/nglauzer" target="_blank" class="social__link has-tooltip">
+               <svg aria-labelledby="socialicons-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#435466">
+                  <title id="socialicons-twitter-icon">Twitter icon</title>
+                  <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+               </svg>
+            </a>
+         </li>
+         <li class="social__item">
+            <a href="https://github.com/andreyglauzer" target="_blank" class="social__link has-tooltip">
+               <svg aria-labelledby="socialicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#435466">
+                  <title id="socialicons-github-icon">GitHub icon</title>
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+               </svg>
+            </a>
+         </li>
+         <li class="social__item">
+            <a href="https://www.linkedin.com/in/andreyglauzer/" target="_blank" class="social__link has-tooltip" aria-describedby="tooltip_rcyyu9ai6p">
+               <svg aria-labelledby="socialicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#435466">
+                  <title id="socialicons-linkedin-icon">LinkedIn icon</title>
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+               </svg>
+            </a>
+         </li>
+      </ul>
+      <span role="button" class="link-button link-button--ghost" >
+         <!---->
+         <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511950597632" target="_blank" class="link-button__link">
+            <svg aria-labelledby="whatsapp-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" >
+               <title id="whatsapp-icon" >WhatsApp icon</title>
+               <path d="M17.498 14.382c-.301-.15-1.767-.867-2.04-.966-.273-.101-.473-.15-.673.15-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.172-.015-.371-.015-.571-.015-.2 0-.523.074-.797.359-.273.3-1.045 1.02-1.045 2.475s1.07 2.865 1.219 3.075c.149.195 2.105 3.195 5.1 4.485.714.3 1.27.48 1.704.629.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345m-5.446 7.443h-.016c-1.77 0-3.524-.48-5.055-1.38l-.36-.214-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-5.445 4.455-9.885 9.942-9.885 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99-.004 5.444-4.46 9.885-9.935 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411" ></path>
+            </svg>
+            Quer bater um papo? Então cola ae!
+         </a>
+      </span>
+   </div>
+   <div class="Quote">
+      <div class="container">
+         <blockquote>
+            <p>“Eu não tenho nenhum talento especial. Sou apenas apaixonadamente curioso.” <small>⏤ Albert Einstein</small></p>
+         </blockquote>
+      </div>
+   </div>
+   <div class="footer__inner">
+      <small>
+         Feito com o
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+         </svg>
+         por <a href="https://twitter.com/nglauzer" target="_blank">@nglauzer</a>,
+         usando <a href="https://jekyllrb.com" target="_blank">jekyllrb</a> e <a href="https://hithub.com" target="_blank">GitHub</a>. Front-End <a href="https://twitter.com/oseunando" target="_blank">@oseunando</a>
+      </small>
+   </div>
+</footer>
+			</div>
+		</div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+<script src="/files/js/NavbarToggle.js" type="text/javascript"></script>
+<script src="/files/js/NavMenu.js" type="text/javascript"></script>
+
+	</body>
+</html>
