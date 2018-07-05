@@ -10,7 +10,7 @@ set -e
 rm -rf _site
 mkdir _site
 
-$DATA = date +%d/%m/%Y
+$DATA = 'date +%d/%m/%Y'
 
 
 git clone https://${GH_TOKEN}@github.com/andreyglauzer/andreyglauzer.github.io.git --branch master _site
