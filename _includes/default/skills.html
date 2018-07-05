@@ -1,0 +1,32 @@
+<section class="HomeSkills HomeSection">
+   <div class="HomeSection__inner">
+      <header class="HomeSection__header">
+         <h2>Minhas habilidades</h2>
+      </header>
+      <div class="container">
+         <div class="skills">
+            <ul class="skills__list">
+               {% for skills in site.skills %}
+                  <li class="skills__item">
+                     <span style="fill:black;background-image: url(&quot;/files/images/skills/{{ skills.icon}}&quot;);">
+                        {{ skills.name }}
+                     </span>
+                     <small>
+                        {{ skills.name }}
+                     </small>
+                  </li>
+               {% endfor %}
+               <li class="skills__item">
+                  <br><br>
+                  <span style="background-image: url(&quot;/files/images/skills/firewall.svg&quot;);">
+                     Testes contra invasões físicas e/ou lógicas, implantação de Firewalls e Redes de computadores...
+                  </span>
+                  <small>
+                     Testes contra invasões físicas e/ou lógicas, implantação de Firewalls e Redes de computadores...
+                  </small>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>

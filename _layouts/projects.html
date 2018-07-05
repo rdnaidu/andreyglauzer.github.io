@@ -1,0 +1,23 @@
+<html data-n-head="dir,lang" dir="ltr" lang="pt_BR" class="wf-ubuntu-n7-active wf-suezone-n4-active wf-ubuntu-n4-active wf-ubuntu-n3-active wf-ubuntu-n5-active wf-active">
+<html>
+	<head>
+		{% include default/metags.html %}
+		{% include projects/head.html %}
+	</head>
+	<body data-n-head="class">
+		<div class="__andreyglauzer">
+			<div>
+				<a href="#MainContent" tabindex="1" class="SkipToContent sr-only sr-only-focusable"><span class="skiplink-text">Pular para o conteúdo principal</span></a>
+				{% include default/menu.html %}
+				<div class="MainContent" id="MainContent">
+					<main>
+						{% include blog/header.html %}
+						{% include projects/projects.html %}
+					</main>
+				</div>
+				{% include default/footer.html %}
+			</div>
+		</div>
+	{% include default/scripts.html %}
+	</body>
+</html>

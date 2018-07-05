@@ -1,0 +1,43 @@
+<div  class="container">
+   <div  class="article-list">
+      {% for post in paginator.posts %}
+         <!-- Post: {% increment counter %} -->
+         <article  class="{% if counter == 6 %}postItem postItem--featured p0{% elsif counter == 12 %}postItem postItem--featured p0{% elsif counter == 18 %}postItem postItem--featured p0{% else %}postItem p1{% endif %}">
+            <a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" class="postItem__link" title="Programador a comunidade precisa de você!">
+               <div class="postItem__image-figure">
+                  <div class="postItem__image" data-src="{{ post.background }}" lazy="loaded" style="background-image: url(&quot;{{ post.background }}&quot;);"></div>
+                  <img src="{{ post.background }}" alt="{{ post.title }}">
+               </div>
+               <div class="postItem__content">
+                  <header class="postItem__header">
+                     <h2 class="postItem__title">{{ post.title }}</h2>
+                  </header>
+                  <p itemprop="description" class="postItem__description">{{ post.content | strip_html | truncatewords:30 }}</p>
+                  <footer class="postItem__footer">
+                     <small class="postItem__meta">
+                        <span itemprop="datePublished" content="2017-03-12">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                              <line x1="16" y1="2" x2="16" y2="6"></line>
+                              <line x1="8" y1="2" x2="8" y2="6"></line>
+                              <line x1="3" y1="10" x2="21" y2="10"></line>
+                           </svg>
+                           Publicado em {{ post.date | date_to_string }}
+                        </span>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="12" cy="7" r="4"></circle>
+                           </svg>
+                           por <strong itemprop="author">{{site.author}}</strong>
+                        </span>
+                     </small>
+                  </footer>
+               </div>
+            </a>
+         </article>
+      {% endfor %}
+   </div>
+   <!---->
+</div>
+
