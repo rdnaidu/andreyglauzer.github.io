@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Instalando o pfSense do Zero
-data: Julho de 2018
+data: Junho de 2018
 background: /files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png
 description: 'Um passo-a-passo de como instalar o pfSense do zero, em um ambiente virtual, mas que também pode ser utilizado em uma rede real.'
 tags: [Segurança, Firewall]
