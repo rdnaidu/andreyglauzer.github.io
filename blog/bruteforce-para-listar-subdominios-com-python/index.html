@@ -20,23 +20,23 @@
 <meta data-n-head="true" data-hid="charset" charset="utf-8">
 <meta data-n-head="true" content="yes" name="apple-mobile-web-app-capable" data-hid="apple-mobile-web-app-capable">
 <meta data-n-head="true" content="default" name="apple-mobile-web-app-status-bar-style" data-hid="apple-mobile-web-app-status-bar-style">
-<meta data-n-head="true" content="Instalando o pfSense do Zero | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP" name="apple-mobile-web-app-title" data-hid="apple-mobile-web-app-title">
-<meta property="og:title" content="Instalando o pfSense do Zero | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP">
+<meta data-n-head="true" content="Bruteforce para listar subdomínios com Python | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP" name="apple-mobile-web-app-title" data-hid="apple-mobile-web-app-title">
+<meta property="og:title" content="Bruteforce para listar subdomínios com Python | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP">
 <meta data-n-head="true" content="Andrey Glauzer" name="author" data-hid="author">
 <meta data-n-head="true" content="#4dba87" name="theme-color" data-hid="theme-color">
-<meta data-n-head="true" content="Um passo-a-passo de como instalar o pfSense do zero, em um ambiente virtual, mas que também pode ser utilizado em uma rede real." name="og:description" data-hid="og:description" property="og:description">
+<meta data-n-head="true" content="Fazendo um bruteforce com Python, para buscar subdomínios." name="og:description" data-hid="og:description" property="og:description">
 <meta data-n-head="true" content="profile" data-hid="og:type" property="og:type">
-<meta property="og:image" content="https://andreyglauzer/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png">
-<meta property="og:image:type" content="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png">
+<meta property="og:image" content="https://andreyglauzer/files/images/articles/2017/2017-11-11-bruteforce-para-listar-subdominios-com-python/banner.jpg">
+<meta property="og:image:type" content="/files/images/articles/2017/2017-11-11-bruteforce-para-listar-subdominios-com-python/banner.jpg">
 <meta data-n-head="true" content="pfSense, Linux, SonicWall, Fortinet, Python, DigitalOcean, Wordpress, FreeBSD, Magento, Debian, Ubuntu, OpenSUSE, Zabbix, Raspberry, Acronis, Bitdefender, Switchs Cisco, ESXI, Hyper-V, Macafee, Symantec Backup, Veeam Backup, HTML5, CSS3, JavaScript, PHP, Apache, Windows Server, Git, GitHub, Docker, Photoshop, Amazon Webservices" name="keyword" data-hid="keyword">
 <meta data-n-head="true" content="/files/images/social/social.png" name="twitter:image" data-hid="twitter:image">
 <meta data-hid="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" data-n-head="true">
-<title>Instalando o pfSense do Zero | Andrey Glauzer | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP</title>
+<title>Bruteforce para listar subdomínios com Python | Andrey Glauzer | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP</title>
 
 	<meta property="og:type" content="article">
 	<meta property="article:author" content="Andrey Glauzer">
-	<meta property="article:section" content="pfSense">
-	<meta property="article:tag" content="SegurançaFirewall">
+	<meta property="article:section" content="BruteForce">
+	<meta property="article:tag" content="">
 	<meta property="article:published_time" content="date_time">
 
 <link rel="apple-touch-icon" sizes="57x57" href="/files/images/icons/apple-icon-57x57.png">
@@ -122,15 +122,15 @@
 
 				<div class="MainContent" id="MainContent">
 					<div class="home">
-						<header class="pageHeader pageHeader--background" data-src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png" lazy="loaded" style="background-image: url(&quot;/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png&quot;);">
+						<header class="pageHeader pageHeader--background" data-src="/files/images/articles/2017/2017-11-11-bruteforce-para-listar-subdominios-com-python/banner.jpg" lazy="loaded" style="background-image: url(&quot;/files/images/articles/2017/2017-11-11-bruteforce-para-listar-subdominios-com-python/banner.jpg&quot;);">
    <div class="pageHeader__inner">
       <div>
          <figure itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject" class="pageHeader__image">
-            <meta itemprop="url" content="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png">
-            <img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png" alt="Imagem de: Instalando o pfSense do Zero">
+            <meta itemprop="url" content="/files/images/articles/2017/2017-11-11-bruteforce-para-listar-subdominios-com-python/banner.jpg">
+            <img src="/files/images/articles/2017/2017-11-11-bruteforce-para-listar-subdominios-com-python/banner.jpg" alt="Imagem de: Bruteforce para listar subdomínios com Python">
          </figure>
          <div class="container">
-            <h1 itemprop="headline" class="pageHeader__title">Instalando o pfSense do Zero</h1>
+            <h1 itemprop="headline" class="pageHeader__title">Bruteforce para listar subdomínios com Python</h1>
             <ol itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
                <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem" class="breadcrumb__item">
                   <a href="/" class="breadcrumb__link nuxt-link-active" title="Home" itemprop="item">
@@ -148,13 +148,13 @@
                </li>
                <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem" class="breadcrumb__item">
                   <a href="/programador-a-comunidade-precisa-de-voce" class="breadcrumb__link nuxt-link-exact-active nuxt-link-active breadcrumb__link--active" title="Programador a comunidade precisa de você!" itemprop="item">
-                     <span itemprop="name">Instalando o pfSense do Zero</span>
+                     <span itemprop="name">Bruteforce para listar subdomínios com Python</span>
                      <meta itemprop="position" content="3">
                   </a>
                   <span class="breadcrumb__divider">»</span>
                </li>
             </ol>
-            <p itemprop="description" class="pageHeader__description">Um passo-a-passo de como instalar o pfSense do zero, em um ambiente virtual, mas que também pode ser utilizado em uma rede real.</p>
+            <p itemprop="description" class="pageHeader__description">Fazendo um bruteforce com Python, para buscar subdomínios.</p>
             <div class="pageHeader__meta">
                <span itemprop="datePublished" content="2017-03-12">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
@@ -163,7 +163,7 @@
                      <line x1="8" y1="2" x2="8" y2="6"></line>
                      <line x1="3" y1="10" x2="21" y2="10"></line>
                   </svg>
-                  <strong>Publicado em Junho de 2018</strong>
+                  <strong>Publicado em </strong>
                </span>
                <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
@@ -179,219 +179,98 @@
 </header>
 						<main itemprop="articleBody" role="main">
 							<div class="Single__body">
-								<p>Já faz um tempo que estou querendo escrever um post sobre o <code class="highlighter-rouge">pfSense</code>, porque é um dos projetos que eu mais gosto, com o tempo se você tiver o costume de acompanhar esse blog, será muito visível/transparente o porque eu gosto tanto desse projeto.</p>
+								<p>Fala galera, já não é novidade pra ninguém o quanto eu gosto de Python, eu sempre procuro aprender coisas novas, inclusive desenvolver scripts que uso no meu dia-a-dia com python, porque é uma delícia de linguagem.</p>
 
-<p>O <code class="highlighter-rouge">pfSense</code> é uma ferramenta completa, com licença <code class="highlighter-rouge">OpenBSD</code>, ou seja não precisa pagar pela sua utilização, e além de ser um software gratuito, podemos considerar ele como um UTM (Unified Threat Management, <em>“Central Unificada de Gerenciamento de Ameaças”</em>), já que com o <code class="highlighter-rouge">pfSense</code>, podemos realizar diversas tarefas que um UTM faz.</p>
+<p>Com o tempo, caso venha acompanhar esse blog, você também vai se apaixonar por essa linguagem, e a quantidade de coisas fantásticas e praticidade que ela te proporciona.</p>
 
-<h2 id="mas-quais-sãos-as-vantagens">Mas quais sãos as vantagens?</h2>
+<p>Bom, vamos deixar de conversa e ir ao que interessa ?</p>
 
-<p>Tem diversas vantagens em ter ele como o seu <code class="highlighter-rouge">Firewall</code> principal, vou listar algumas que eu acho pontuais.</p>
+<h2 id="bruteforce">Bruteforce</h2>
 
-<ol>
-  <li>Gratuito;</li>
-  <li>Pequeno e leve;</li>
-  <li>Fácil utilização;</li>
-  <li>Estável;</li>
-  <li>Seguro;</li>
-  <li>Robusto;</li>
-  <li>Recursos de filtragem;</li>
-  <li>Pacotes diversificados;</li>
-  <li>Tráfego dinâmico;</li>
-  <li>Cluster;</li>
-  <li>Completo.</li>
-</ol>
+<p>Ataques de <code class="highlighter-rouge">Bruteforce</code> consistem em uma busca exaustiva até encontrar o que queremos, boa parte desses ataques são com base em uma <code class="highlighter-rouge">Wordlist</code>, que é um documento com vários nomes possíveis de acordo com o que você esteja procurando.</p>
 
-<h2 id="e-quais-são-as-desvantagens">E quais são as desvantagens?</h2>
+<p>Uma maneira simples para melhor entendimento é pensarmos da seguinte maneira, supondo que temos um site que exige autenticação, o usuário é root e a senha é toor, mas não sabemos a senha, então vamos ficar tentando até acertar, parece exaustivo certo? Mas podemos automatizar isso com scripts, então criamos uma wordlist com possíveis senhas.</p>
 
-<p>Até agora eu consegui fazer tudo que um UTM faz no <code class="highlighter-rouge">pfSense</code>, e as principais atividades de Firewall’s como <em>SonicWall</em> e <em>Fortinet</em> fazem, eu conseguir aplicar com ele, então na minha opinião a unica desvantagem é que não temos um suporte, sendo assim caso tenha problemas com Hardware/Lógico, você tem que resolver sozinho, mas sem pânico a comunidade é grande, e no forúm sempre vai ter alguém que já passou pelo mesmo problema que você.</p>
-
-<h2 id="pré-requisitos">Pré-Requisitos</h2>
-
-<p>O <code class="highlighter-rouge">pfSense</code> é baseado em sistemas <code class="highlighter-rouge">FreeBSD</code>, isso significa que ele é pequeno e utiliza poucos recursos de uma máquina, então o seu Hardware não precisa ser robusto para suportar, mas é claro que quanto mais acessos, de mais processamento ele vai precisar com isso o seu Hardware vai precisar ser melhor, então recomendo que antes de aplicar na sua rede, você pense no seu Hardware, como esse post é apenas para estudos, nós vamos utilizar uma máquina virtual, que também não vai precisar de muita coisa, com <code class="highlighter-rouge">2GB de HD</code>, e <code class="highlighter-rouge">512MB de ram</code>, já conseguimos fazer um laboratório.</p>
-
-<h2 id="o-que-vamos-utilizar">O que vamos utilizar</h2>
-
-<p>Antes de começar você precisa de três coisas, um computador, o <a href="https://www.virtualbox.org/">VirtualBox</a> que é um software de virtualização free instalado na sua máquina, e o mais importante a <a href="https://www.pfsense.org/download/">ISO do pfSense</a>.</p>
-
-<p>Com essas três coisas podemos prosseguir com o nosso tutorial.</p>
-
-<h2 id="configurando-a-máquina-virtual">Configurando a máquina virtual</h2>
-
-<p>Antes de mais nada é necessário configurar a máquina virtual, então abra o seu VirtualBox e vá em <code class="highlighter-rouge">Novo</code> &gt; Dê um nome para a Máquina, no caso, <code class="highlighter-rouge">PfSense</code> &gt; Selecione <code class="highlighter-rouge">BSD</code> como Sistema Operacional e <code class="highlighter-rouge">FreeBSD 64 Bits</code>, como na figura à baixo:</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/01.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Os próximos passos é só prosseguir e configurar de acordo com a sua necessidade, eu vou deixar a minha com <code class="highlighter-rouge">512 de RAM</code> e <code class="highlighter-rouge">1 GB</code> de disco que é mais que suficiente.</p>
-
-<p>Vamos configurar as placas de rede, para isso vá em <code class="highlighter-rouge">Configurações</code> &gt; <code class="highlighter-rouge">Rede</code>, deixe o Adaptador 1 como <code class="highlighter-rouge">Bridge</code>, e em modo promíscuo <code class="highlighter-rouge">Permitir tudo</code>, exatamente como a figura à baixo:</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/02.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Clique em <code class="highlighter-rouge">Adaptador 2</code> em <code class="highlighter-rouge">Rede</code> mesmo, e deixe como <code class="highlighter-rouge">Rede Interna</code>, e em modo promíscuo <code class="highlighter-rouge">Permitir tudo</code>, exatamente como a figura à baixo:</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/03.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Agora vá em <code class="highlighter-rouge">Configurações</code> &gt; <code class="highlighter-rouge">Armazenamento</code> clique no ícone de <code class="highlighter-rouge">CD</code>, e selecione a ISO do pfSense, a mesma que você fez Download no site oficial.</p>
-
-<p>Com esses passos realizados, já temos uma máquina virtual configurada, que está pronta para ser iniciada, então vamos lá, clique em <code class="highlighter-rouge">Iniciar</code>, no <code class="highlighter-rouge">pfSense</code>.</p>
-
-<h2 id="instalação-do-firewall">Instalação do Firewall</h2>
-
-<p>Com a máquina iniciada, ele já deve iniciar dando boot pelo CD, conforme configuramos em alguns passos à cima, então na primeira tela pressione o número 1, que se refere a opção <em>“Boot Multi User [Enter]”</em>.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/04.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Após selecionar a opção <code class="highlighter-rouge">1</code>, irá começar a descompactação do Kernel e será solicitado como que você deseja iniciar, espere o tempo de boot acabar para que ele inicie o processo de instalação. E selecione <code class="highlighter-rouge">99</code>.</p>
-
-<p>Selecione a Opçao “Accept These Settings” e dê enter para prosseguir, logo selecione “Quick/Easy instll”, e enter novamente, para que possa ser iniciada a instação do Software.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/06.png" alt="enter image description here" />
-<br /></p>
-
-<p>Nesse tutorial vamos utilizar o modo <code class="highlighter-rouge">Rápido/Facíl</code>, então selecione ele e de enter.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/07.png" alt="enter image description here" />
-<br /></p>
-
-<p>Após concluir a instalação será necessário a customização do Kernel, mas sem pânico, o <code class="highlighter-rouge">Kernel Standard do FreeBSD</code>, já tem os drivers genéricos e funcionais para que tudo funcione perfeitamente no seu Firewall, então selecione a opção “<em>Standard</em>”, para prosseguimos.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/08.png" alt="enter image description here" />
-<br /></p>
-
-<p>Após a conclusão da instalação é só selecionar a opção de reboot. Não esqueça de ir no menu de dispositivos e desmarcar a ISO do pfSense para que ele não inicie novamente.</p>
-
-<p>No momento do boot, pressione <code class="highlighter-rouge">F1</code>, e novamente pressione <code class="highlighter-rouge">1</code>, e aguarde o sistema carregar.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/09.PNG" alt="enter image description here" />
-<br /></p>
-
-<h2 id="configuração-de-placa-de-rede-do-firewall">Configuração de placa de rede do Firewall</h2>
-
-<p>Agora vamos precisar configurar a <code class="highlighter-rouge">VLAN</code> que ele vai trabalhar, ou seja, atribuir os IP’s nas placas de rede que foram instaladas na máquina. Note que ele reconheceu duas placas de rede, que foi justamente as que configuramos, que no meu caso é a <code class="highlighter-rouge">em0</code> &amp; <code class="highlighter-rouge">em1</code>, as vezes essas siglas mudam, depende muito da sua placa de rede e de como ela foi configurada.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/10.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Digite <code class="highlighter-rouge">2</code> e pressione <code class="highlighter-rouge">Enter</code>, para que possamos configurar as placas de rede, tanto de <code class="highlighter-rouge">LAN</code>, como a de <code class="highlighter-rouge">WAN</code>.</p>
-
-<h3 id="em0">Em0</h3>
-
-<blockquote>
-  <p>Vai receber a rede WAN, que no nosso caso de laboratório, podemos
-deixar como DHCP, mas em um ambiente empresarial, será necessário você
-colocar o IP que a provedora de internet te passou ou que você coloque
-um IP fixo.</p>
-</blockquote>
-
-<h3 id="em1">Em1</h3>
-
-<blockquote>
-  <p>Vai receber a nossa rede LAN, que você pode usar qualquer uma, tanto
-10.0.0.0, 192.168.0.0 ou 172.16.0.0, aqui vai da sua preferência, eu vou usar a rede 10.0.0.0</p>
-</blockquote>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/11.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Agora vamos pressionar <code class="highlighter-rouge">1</code> para que possamos começar com a rede <code class="highlighter-rouge">WAN</code>, que deve seguir as seguintes configurações:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter an option: 2
-Enter the number of the interface you wish to configure: 1
-Configure IPv4 address WAN interface via DHCP? (y/n) y
-Configure IPv6 address WAN interface via DHCP6? (y/n) y
-Press &lt;ENTER&gt; to continue.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root
+admin
+1234
+0987
+qazx
+toor
 </code></pre></div></div>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/12.PNG" alt="enter image description here" />
-<br /></p>
+<p>O script vai passar linha por linha, tentando essas senhas que colocamos, e como a nossa senha é toor, ele deve nos retornar dizendo que a senha correta.</p>
 
-<p>Ele deve voltar para a tela inicial, onde vamos ter que repetir quase que o mesmo processo, selecionando o número <code class="highlighter-rouge">2</code>, só que ao invés de configurar a <code class="highlighter-rouge">WAN</code>, vamos configurar a <code class="highlighter-rouge">LAN</code>, que é <code class="highlighter-rouge">2</code> também.</p>
+<blockquote>
+  <p><strong>Alerta</strong>: esse é um método extremamente barulhento, no caso de empresas que possuem Firewall UTM/IPS, vai deixar um log gigante de tanta requisição que você fez, portanto <strong>CUIDADO</strong>!</p>
+</blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter the number of the interface you wish to configure: 2
+<h2 id="como-o-script-funciona">Como o script funciona</h2>
 
-Enter the new LAN IPv4 address.  Press &lt;ENTER&gt; for none:
-&gt; 10.0.0.1
-Enter the new LAN IPv4 subnet bit count (1 to 31): 
-&gt; 24
-For a WAN, enter the new LAN IPv4 upstream gateway address.
-For a LAN, press &lt;ENTER&gt; for none:
-&gt; Enter
-Enter the new LAN IPv6 address.  Press &lt;ENTER&gt; for none:
-&gt; Enter
+<p>O script em si é muito simples, não me deu trabalho, fiquei mais tempo tratando erros que poderiam acontecer durante a execução do script que desenvolvendo.</p>
 
-The IPv4 LAN address has been set to 10.0.0.1/24
-You can now access the webConfigurator by opening the following URL in your web browser:
-                http://10.0.0.1/
+<p>Explicação bem rápida de como tudo vai funcionar. Boralá.</p>
 
-Press &lt;ENTER&gt; to continue.
+<p>Nessa parte do script, eu estou abrindo a wordlist que eu defini, e lendo linha por linha, ou seja um à um, e coloquei uma tratativa simples de erro, que se caso não for encontrado o arquivo, ou ele seja de uma extensão que não foi possível a leitora, vai te avisar.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>try:
+	arquivo = open(args.wordlist)
+	linhas = arquivo.read().splitlines()
+except:
+	print('[ERROR] - A Wordlist não foi encontrada ou é inválida.')
+	sys.exit(1)
 </code></pre></div></div>
 
-<h2 id="acessando-interface-web">Acessando Interface WEB</h2>
+<p>Já neste for, eu pego as linhas que eu li na primeira parte do script, e faço uma tratativa, juntando o domínio que eu digitei com o subdomínio da wordlist.</p>
 
-<p>Para continuarmos com o nosso tutorial temos que imaginar que estamos em uma rede totalmente diferente da que está em nossa máquina física, por tanto, se você tentar acessar o <code class="highlighter-rouge">pfSense</code> do seu browser, não será encontrado, para isso será preciso criar uma outra máquina virtual, colocar na mesma rede que a <code class="highlighter-rouge">LAN</code> dele, deixando as configurações de placa de rede assim:</p>
+<p>Exemplo: <code class="highlighter-rouge">subdominio.exemplo.com.br</code></p>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/13.PNG" alt="enter image description here" />
-<br /></p>
+<p>E depois jogo esse resultado em um <code class="highlighter-rouge">def</code> que se chama resolve, onde ele vai verificar um por um.</p>
 
-<h2 id="configurações-via-interface-web">Configurações via interface WEB</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for linha in linhas:
+        subdominio = '{}.{}'.format(linha, args.dominio)
+        resolve(subdominio)
+</code></pre></div></div>
 
-<p>Para acessar tudo que você precisa fazer é digitar o IP de <code class="highlighter-rouge">LAN</code>, no seu browser, com o usuário e senha padrão que é Usuário: <code class="highlighter-rouge">admin</code>, Senha: <code class="highlighter-rouge">pfsense</code>.</p>
+<p>Com todas as informações tratadas, agora eu vou resolver esses DNS, trazendo comigo o seu IP.</p>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/14.PNG" alt="enter image description here" />
-<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def resolve(subdominio):
+    try:
+        respostas = dns.resolver.query(subdominio, 'a')
+        for resultado in respostas:
+            finalizou = """{}
+						[SITE]  -   {}
+						[IP]    -   {}
+            {}""".format(fg(198),subdominio,resultado,attr(0))
+            print (finalizou)
+</code></pre></div></div>
 
-<p>Então será iniciado um <code class="highlighter-rouge">Setup</code>, a maioria das opções você pode clicar em <code class="highlighter-rouge">Next</code>, porque tudo isso pode ser alterado depois, quando você quiser, então vou mostrar aqui só as principais, nada muito chato.</p>
+<h2 id="como-usar">Como usar</h2>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/15.PNG" alt="enter image description here" />
-<br /></p>
+<p>Deixando de lado toda essa parte explicativa, vamos à utilização, antes de mais nada você precisa baixar o script, então segue os comando.</p>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/16.PNG" alt="enter image description here" />
-<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/andreyglauzer/dnsls.git
 
-<p>Aqui você deve colocar os servidores DNS que você utiliza, nesse exemplo coloquei o OPENDNS, mas o ideal é que você coloque o DNS de LAN da sua rede.</p>
+cd dnsls
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/17.PNG" alt="enter image description here" />
-<br /></p>
+pip3 install -r requeriments.txt
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/18.PNG" alt="enter image description here" />
-<br /></p>
+python3 dnsls.py -d exemple.com -l wordlist.txt
+</code></pre></div></div>
 
-<p>E por fim, coloque uma nova senha para o usuário <code class="highlighter-rouge">admin</code>.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usage: dnsls.py [-h] [-d DOMINIO] [-l WORDLIST]
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/19.PNG" alt="enter image description here" />
-<br /></p>
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DOMINIO, --dominio DOMINIO
+                        Domínio que você deseja fazer um bruteforce.
+  -l WORDLIST, --lista WORDLIST
+                        Wordlist que você deseja usar.
+</code></pre></div></div>
 
-<p>Com o <code class="highlighter-rouge">Setup</code> finalizado, você será redirecionado para a página inicial de administração, daqui em diante é só alegria. Pretendo criar novos tutoriais, mais pra frente, mostrando todo o poder que esse Firewall tem.</p>
+<p>E por favor não se esqueça do alerta que eu citei lá em cima!</p>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/20.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Por hoje é só galera, eu pretendo criar muitos outros ainda, mas isso vai vim com o tempo.</p>
-
-<p>\Abraço</p>
+<p>Então é isso ai, até o próximo!</p>
 
 
 							</div>

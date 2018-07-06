@@ -20,23 +20,23 @@
 <meta data-n-head="true" data-hid="charset" charset="utf-8">
 <meta data-n-head="true" content="yes" name="apple-mobile-web-app-capable" data-hid="apple-mobile-web-app-capable">
 <meta data-n-head="true" content="default" name="apple-mobile-web-app-status-bar-style" data-hid="apple-mobile-web-app-status-bar-style">
-<meta data-n-head="true" content="Instalando o pfSense do Zero | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP" name="apple-mobile-web-app-title" data-hid="apple-mobile-web-app-title">
-<meta property="og:title" content="Instalando o pfSense do Zero | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP">
+<meta data-n-head="true" content="O que usuários de dóminio conseguem saber sobre o seu Active Directory | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP" name="apple-mobile-web-app-title" data-hid="apple-mobile-web-app-title">
+<meta property="og:title" content="O que usuários de dóminio conseguem saber sobre o seu Active Directory | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP">
 <meta data-n-head="true" content="Andrey Glauzer" name="author" data-hid="author">
 <meta data-n-head="true" content="#4dba87" name="theme-color" data-hid="theme-color">
-<meta data-n-head="true" content="Um passo-a-passo de como instalar o pfSense do zero, em um ambiente virtual, mas que também pode ser utilizado em uma rede real." name="og:description" data-hid="og:description" property="og:description">
+<meta data-n-head="true" content="O que um Usuário Comum consegue extrair do Active Directory? Usando WMIC e DSQUERY." name="og:description" data-hid="og:description" property="og:description">
 <meta data-n-head="true" content="profile" data-hid="og:type" property="og:type">
-<meta property="og:image" content="https://andreyglauzer/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png">
-<meta property="og:image:type" content="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png">
+<meta property="og:image" content="https://andreyglauzer/files/images/articles/2018/2018-07-05-O-que-usuarios-de-dominio-conseguem-saber-sobre-o-seu-Active-Directory/banner.png">
+<meta property="og:image:type" content="/files/images/articles/2018/2018-07-05-O-que-usuarios-de-dominio-conseguem-saber-sobre-o-seu-Active-Directory/banner.png">
 <meta data-n-head="true" content="pfSense, Linux, SonicWall, Fortinet, Python, DigitalOcean, Wordpress, FreeBSD, Magento, Debian, Ubuntu, OpenSUSE, Zabbix, Raspberry, Acronis, Bitdefender, Switchs Cisco, ESXI, Hyper-V, Macafee, Symantec Backup, Veeam Backup, HTML5, CSS3, JavaScript, PHP, Apache, Windows Server, Git, GitHub, Docker, Photoshop, Amazon Webservices" name="keyword" data-hid="keyword">
 <meta data-n-head="true" content="/files/images/social/social.png" name="twitter:image" data-hid="twitter:image">
 <meta data-hid="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" data-n-head="true">
-<title>Instalando o pfSense do Zero | Andrey Glauzer | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP</title>
+<title>O que usuários de dóminio conseguem saber sobre o seu Active Directory | Andrey Glauzer | Analista de Suporte / Analista de Segurança da Informação em Barueri/SP</title>
 
 	<meta property="og:type" content="article">
 	<meta property="article:author" content="Andrey Glauzer">
-	<meta property="article:section" content="pfSense">
-	<meta property="article:tag" content="SegurançaFirewall">
+	<meta property="article:section" content="Windows Server">
+	<meta property="article:tag" content="Windows ServerPentest">
 	<meta property="article:published_time" content="date_time">
 
 <link rel="apple-touch-icon" sizes="57x57" href="/files/images/icons/apple-icon-57x57.png">
@@ -122,15 +122,15 @@
 
 				<div class="MainContent" id="MainContent">
 					<div class="home">
-						<header class="pageHeader pageHeader--background" data-src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png" lazy="loaded" style="background-image: url(&quot;/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png&quot;);">
+						<header class="pageHeader pageHeader--background" data-src="/files/images/articles/2018/2018-07-05-O-que-usuarios-de-dominio-conseguem-saber-sobre-o-seu-Active-Directory/banner.png" lazy="loaded" style="background-image: url(&quot;/files/images/articles/2018/2018-07-05-O-que-usuarios-de-dominio-conseguem-saber-sobre-o-seu-Active-Directory/banner.png&quot;);">
    <div class="pageHeader__inner">
       <div>
          <figure itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject" class="pageHeader__image">
-            <meta itemprop="url" content="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png">
-            <img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/banner.png" alt="Imagem de: Instalando o pfSense do Zero">
+            <meta itemprop="url" content="/files/images/articles/2018/2018-07-05-O-que-usuarios-de-dominio-conseguem-saber-sobre-o-seu-Active-Directory/banner.png">
+            <img src="/files/images/articles/2018/2018-07-05-O-que-usuarios-de-dominio-conseguem-saber-sobre-o-seu-Active-Directory/banner.png" alt="Imagem de: O que usuários de dóminio conseguem saber sobre o seu Active Directory">
          </figure>
          <div class="container">
-            <h1 itemprop="headline" class="pageHeader__title">Instalando o pfSense do Zero</h1>
+            <h1 itemprop="headline" class="pageHeader__title">O que usuários de dóminio conseguem saber sobre o seu Active Directory</h1>
             <ol itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
                <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem" class="breadcrumb__item">
                   <a href="/" class="breadcrumb__link nuxt-link-active" title="Home" itemprop="item">
@@ -148,13 +148,13 @@
                </li>
                <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem" class="breadcrumb__item">
                   <a href="/programador-a-comunidade-precisa-de-voce" class="breadcrumb__link nuxt-link-exact-active nuxt-link-active breadcrumb__link--active" title="Programador a comunidade precisa de você!" itemprop="item">
-                     <span itemprop="name">Instalando o pfSense do Zero</span>
+                     <span itemprop="name">O que usuários de dóminio conseguem saber sobre o seu Active Directory</span>
                      <meta itemprop="position" content="3">
                   </a>
                   <span class="breadcrumb__divider">»</span>
                </li>
             </ol>
-            <p itemprop="description" class="pageHeader__description">Um passo-a-passo de como instalar o pfSense do zero, em um ambiente virtual, mas que também pode ser utilizado em uma rede real.</p>
+            <p itemprop="description" class="pageHeader__description">O que um Usuário Comum consegue extrair do Active Directory? Usando WMIC e DSQUERY.</p>
             <div class="pageHeader__meta">
                <span itemprop="datePublished" content="2017-03-12">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
@@ -179,219 +179,340 @@
 </header>
 						<main itemprop="articleBody" role="main">
 							<div class="Single__body">
-								<p>Já faz um tempo que estou querendo escrever um post sobre o <code class="highlighter-rouge">pfSense</code>, porque é um dos projetos que eu mais gosto, com o tempo se você tiver o costume de acompanhar esse blog, será muito visível/transparente o porque eu gosto tanto desse projeto.</p>
+								<p>As vezes deixamos nossas regras de GPO e permissões perfeitas, mas mesmo assim algumas coisas acabam passando despercebidas, ou até mesmo encontramos problemas que não existe uma solução fácil ou até mesmo sem existência.</p>
 
-<p>O <code class="highlighter-rouge">pfSense</code> é uma ferramenta completa, com licença <code class="highlighter-rouge">OpenBSD</code>, ou seja não precisa pagar pela sua utilização, e além de ser um software gratuito, podemos considerar ele como um UTM (Unified Threat Management, <em>“Central Unificada de Gerenciamento de Ameaças”</em>), já que com o <code class="highlighter-rouge">pfSense</code>, podemos realizar diversas tarefas que um UTM faz.</p>
+<p>Principalmente pela a situação atual que temos no nosso mercado de trabalho, temos uma única pessoa para exercer diversas áreas de TI, sem contar a falta de preocupação que muitas delas tem com a segurança da informação.</p>
 
-<h2 id="mas-quais-sãos-as-vantagens">Mas quais sãos as vantagens?</h2>
+<p>Vou mostrar nesse post, como um usuário <code class="highlighter-rouge">padrão</code>, com poucas permissões, consegue obter informações valiosas do <code class="highlighter-rouge">Active Directory</code>. Podendo essas informações serem utilizadas para fins maliciosos inclusive para execução de scripts.</p>
 
-<p>Tem diversas vantagens em ter ele como o seu <code class="highlighter-rouge">Firewall</code> principal, vou listar algumas que eu acho pontuais.</p>
+<h2 id="preparando-ambiente">Preparando ambiente</h2>
 
-<ol>
-  <li>Gratuito;</li>
-  <li>Pequeno e leve;</li>
-  <li>Fácil utilização;</li>
-  <li>Estável;</li>
-  <li>Seguro;</li>
-  <li>Robusto;</li>
-  <li>Recursos de filtragem;</li>
-  <li>Pacotes diversificados;</li>
-  <li>Tráfego dinâmico;</li>
-  <li>Cluster;</li>
-  <li>Completo.</li>
-</ol>
+<p>Para que possamos executar o WMIC não é necessário fazer nenhum tipo de instalação, já o <code class="highlighter-rouge">DSQUERY</code> será preciso instalar as <code class="highlighter-rouge">Ferramentas de Administração de Servidor Remoto</code> <a href="https://www.microsoft.com/pt-BR/download/details.aspx?id=45520">RSAT</a>.</p>
 
-<h2 id="e-quais-são-as-desvantagens">E quais são as desvantagens?</h2>
+<h3 id="identificando-o-domain-controller">Identificando o Domain Controller</h3>
 
-<p>Até agora eu consegui fazer tudo que um UTM faz no <code class="highlighter-rouge">pfSense</code>, e as principais atividades de Firewall’s como <em>SonicWall</em> e <em>Fortinet</em> fazem, eu conseguir aplicar com ele, então na minha opinião a unica desvantagem é que não temos um suporte, sendo assim caso tenha problemas com Hardware/Lógico, você tem que resolver sozinho, mas sem pânico a comunidade é grande, e no forúm sempre vai ter alguém que já passou pelo mesmo problema que você.</p>
+<p>Para que possamos identificar o <code class="highlighter-rouge">Domain Controller</code> em que estamos logado, será necessário executar o seguinte comando:</p>
 
-<h2 id="pré-requisitos">Pré-Requisitos</h2>
-
-<p>O <code class="highlighter-rouge">pfSense</code> é baseado em sistemas <code class="highlighter-rouge">FreeBSD</code>, isso significa que ele é pequeno e utiliza poucos recursos de uma máquina, então o seu Hardware não precisa ser robusto para suportar, mas é claro que quanto mais acessos, de mais processamento ele vai precisar com isso o seu Hardware vai precisar ser melhor, então recomendo que antes de aplicar na sua rede, você pense no seu Hardware, como esse post é apenas para estudos, nós vamos utilizar uma máquina virtual, que também não vai precisar de muita coisa, com <code class="highlighter-rouge">2GB de HD</code>, e <code class="highlighter-rouge">512MB de ram</code>, já conseguimos fazer um laboratório.</p>
-
-<h2 id="o-que-vamos-utilizar">O que vamos utilizar</h2>
-
-<p>Antes de começar você precisa de três coisas, um computador, o <a href="https://www.virtualbox.org/">VirtualBox</a> que é um software de virtualização free instalado na sua máquina, e o mais importante a <a href="https://www.pfsense.org/download/">ISO do pfSense</a>.</p>
-
-<p>Com essas três coisas podemos prosseguir com o nosso tutorial.</p>
-
-<h2 id="configurando-a-máquina-virtual">Configurando a máquina virtual</h2>
-
-<p>Antes de mais nada é necessário configurar a máquina virtual, então abra o seu VirtualBox e vá em <code class="highlighter-rouge">Novo</code> &gt; Dê um nome para a Máquina, no caso, <code class="highlighter-rouge">PfSense</code> &gt; Selecione <code class="highlighter-rouge">BSD</code> como Sistema Operacional e <code class="highlighter-rouge">FreeBSD 64 Bits</code>, como na figura à baixo:</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/01.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Os próximos passos é só prosseguir e configurar de acordo com a sua necessidade, eu vou deixar a minha com <code class="highlighter-rouge">512 de RAM</code> e <code class="highlighter-rouge">1 GB</code> de disco que é mais que suficiente.</p>
-
-<p>Vamos configurar as placas de rede, para isso vá em <code class="highlighter-rouge">Configurações</code> &gt; <code class="highlighter-rouge">Rede</code>, deixe o Adaptador 1 como <code class="highlighter-rouge">Bridge</code>, e em modo promíscuo <code class="highlighter-rouge">Permitir tudo</code>, exatamente como a figura à baixo:</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/02.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Clique em <code class="highlighter-rouge">Adaptador 2</code> em <code class="highlighter-rouge">Rede</code> mesmo, e deixe como <code class="highlighter-rouge">Rede Interna</code>, e em modo promíscuo <code class="highlighter-rouge">Permitir tudo</code>, exatamente como a figura à baixo:</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/03.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Agora vá em <code class="highlighter-rouge">Configurações</code> &gt; <code class="highlighter-rouge">Armazenamento</code> clique no ícone de <code class="highlighter-rouge">CD</code>, e selecione a ISO do pfSense, a mesma que você fez Download no site oficial.</p>
-
-<p>Com esses passos realizados, já temos uma máquina virtual configurada, que está pronta para ser iniciada, então vamos lá, clique em <code class="highlighter-rouge">Iniciar</code>, no <code class="highlighter-rouge">pfSense</code>.</p>
-
-<h2 id="instalação-do-firewall">Instalação do Firewall</h2>
-
-<p>Com a máquina iniciada, ele já deve iniciar dando boot pelo CD, conforme configuramos em alguns passos à cima, então na primeira tela pressione o número 1, que se refere a opção <em>“Boot Multi User [Enter]”</em>.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/04.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Após selecionar a opção <code class="highlighter-rouge">1</code>, irá começar a descompactação do Kernel e será solicitado como que você deseja iniciar, espere o tempo de boot acabar para que ele inicie o processo de instalação. E selecione <code class="highlighter-rouge">99</code>.</p>
-
-<p>Selecione a Opçao “Accept These Settings” e dê enter para prosseguir, logo selecione “Quick/Easy instll”, e enter novamente, para que possa ser iniciada a instação do Software.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/06.png" alt="enter image description here" />
-<br /></p>
-
-<p>Nesse tutorial vamos utilizar o modo <code class="highlighter-rouge">Rápido/Facíl</code>, então selecione ele e de enter.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/07.png" alt="enter image description here" />
-<br /></p>
-
-<p>Após concluir a instalação será necessário a customização do Kernel, mas sem pânico, o <code class="highlighter-rouge">Kernel Standard do FreeBSD</code>, já tem os drivers genéricos e funcionais para que tudo funcione perfeitamente no seu Firewall, então selecione a opção “<em>Standard</em>”, para prosseguimos.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/08.png" alt="enter image description here" />
-<br /></p>
-
-<p>Após a conclusão da instalação é só selecionar a opção de reboot. Não esqueça de ir no menu de dispositivos e desmarcar a ISO do pfSense para que ele não inicie novamente.</p>
-
-<p>No momento do boot, pressione <code class="highlighter-rouge">F1</code>, e novamente pressione <code class="highlighter-rouge">1</code>, e aguarde o sistema carregar.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/09.PNG" alt="enter image description here" />
-<br /></p>
-
-<h2 id="configuração-de-placa-de-rede-do-firewall">Configuração de placa de rede do Firewall</h2>
-
-<p>Agora vamos precisar configurar a <code class="highlighter-rouge">VLAN</code> que ele vai trabalhar, ou seja, atribuir os IP’s nas placas de rede que foram instaladas na máquina. Note que ele reconheceu duas placas de rede, que foi justamente as que configuramos, que no meu caso é a <code class="highlighter-rouge">em0</code> &amp; <code class="highlighter-rouge">em1</code>, as vezes essas siglas mudam, depende muito da sua placa de rede e de como ela foi configurada.</p>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/10.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Digite <code class="highlighter-rouge">2</code> e pressione <code class="highlighter-rouge">Enter</code>, para que possamos configurar as placas de rede, tanto de <code class="highlighter-rouge">LAN</code>, como a de <code class="highlighter-rouge">WAN</code>.</p>
-
-<h3 id="em0">Em0</h3>
-
-<blockquote>
-  <p>Vai receber a rede WAN, que no nosso caso de laboratório, podemos
-deixar como DHCP, mas em um ambiente empresarial, será necessário você
-colocar o IP que a provedora de internet te passou ou que você coloque
-um IP fixo.</p>
-</blockquote>
-
-<h3 id="em1">Em1</h3>
-
-<blockquote>
-  <p>Vai receber a nossa rede LAN, que você pode usar qualquer uma, tanto
-10.0.0.0, 192.168.0.0 ou 172.16.0.0, aqui vai da sua preferência, eu vou usar a rede 10.0.0.0</p>
-</blockquote>
-
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/11.PNG" alt="enter image description here" />
-<br /></p>
-
-<p>Agora vamos pressionar <code class="highlighter-rouge">1</code> para que possamos começar com a rede <code class="highlighter-rouge">WAN</code>, que deve seguir as seguintes configurações:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter an option: 2
-Enter the number of the interface you wish to configure: 1
-Configure IPv4 address WAN interface via DHCP? (y/n) y
-Configure IPv6 address WAN interface via DHCP6? (y/n) y
-Press &lt;ENTER&gt; to continue.
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> %logonserver%
 </code></pre></div></div>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/12.PNG" alt="enter image description here" />
-<br /></p>
+<p>Resultado:</p>
 
-<p>Ele deve voltar para a tela inicial, onde vamos ter que repetir quase que o mesmo processo, selecionando o número <code class="highlighter-rouge">2</code>, só que ao invés de configurar a <code class="highlighter-rouge">WAN</code>, vamos configurar a <code class="highlighter-rouge">LAN</code>, que é <code class="highlighter-rouge">2</code> também.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter the number of the interface you wish to configure: 2
-
-Enter the new LAN IPv4 address.  Press &lt;ENTER&gt; for none:
-&gt; 10.0.0.1
-Enter the new LAN IPv4 subnet bit count (1 to 31): 
-&gt; 24
-For a WAN, enter the new LAN IPv4 upstream gateway address.
-For a LAN, press &lt;ENTER&gt; for none:
-&gt; Enter
-Enter the new LAN IPv6 address.  Press &lt;ENTER&gt; for none:
-&gt; Enter
-
-The IPv4 LAN address has been set to 10.0.0.1/24
-You can now access the webConfigurator by opening the following URL in your web browser:
-                http://10.0.0.1/
-
-Press &lt;ENTER&gt; to continue.
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\\</span>SRVLAB
 </code></pre></div></div>
 
-<h2 id="acessando-interface-web">Acessando Interface WEB</h2>
+<h3 id="listando-todos-os-usuários-do-domínio">Listando todos os usuários do domínio</h3>
 
-<p>Para continuarmos com o nosso tutorial temos que imaginar que estamos em uma rede totalmente diferente da que está em nossa máquina física, por tanto, se você tentar acessar o <code class="highlighter-rouge">pfSense</code> do seu browser, não será encontrado, para isso será preciso criar uma outra máquina virtual, colocar na mesma rede que a <code class="highlighter-rouge">LAN</code> dele, deixando as configurações de placa de rede assim:</p>
+<p>Também é possível listar todos os usuários cadastrados no AD, usando o comando:</p>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/13.PNG" alt="enter image description here" />
-<br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user /domain
+</code></pre></div></div>
 
-<h2 id="configurações-via-interface-web">Configurações via interface WEB</h2>
+<p>Resultado:</p>
 
-<p>Para acessar tudo que você precisa fazer é digitar o IP de <code class="highlighter-rouge">LAN</code>, no seu browser, com o usuário e senha padrão que é Usuário: <code class="highlighter-rouge">admin</code>, Senha: <code class="highlighter-rouge">pfsense</code>.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+A solicitação será processada em um controlador de domínio para o domínio laboratorio.local.
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/14.PNG" alt="enter image description here" />
-<br /></p>
 
-<p>Então será iniciado um <code class="highlighter-rouge">Setup</code>, a maioria das opções você pode clicar em <code class="highlighter-rouge">Next</code>, porque tudo isso pode ser alterado depois, quando você quiser, então vou mostrar aqui só as principais, nada muito chato.</p>
+Contas de usuário para <span class="se">\\</span>SRVLAB.laboratorio.local
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/15.PNG" alt="enter image description here" />
-<br /></p>
+<span class="nt">-------------------------------------------------------------------------------</span>
+Administrador            andrey                   sshd
+backup                   Convidado                cyg_server
+diogo                    eduardohenrique          fernandamel
+flavia                   gabriel                  krbtgt
+marcio                   marco                    misael
+paulo                    pneto                    rodrigo
+root                     sousa                    squid
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/16.PNG" alt="enter image description here" />
-<br /></p>
+Comando concluído com êxito.
 
-<p>Aqui você deve colocar os servidores DNS que você utiliza, nesse exemplo coloquei o OPENDNS, mas o ideal é que você coloque o DNS de LAN da sua rede.</p>
+</code></pre></div></div>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/17.PNG" alt="enter image description here" />
-<br /></p>
+<h3 id="listando-todos-os-servidores-de-domínio">Listando todos os servidores de domínio</h3>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/18.PNG" alt="enter image description here" />
-<br /></p>
+<p>Usando o <code class="highlighter-rouge">DSQUERY</code> conseguimos listar todos os servidores de domínio da rede.</p>
 
-<p>E por fim, coloque uma nova senha para o usuário <code class="highlighter-rouge">admin</code>.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dsquery server
+</code></pre></div></div>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/19.PNG" alt="enter image description here" />
-<br /></p>
+<p>Resultado:</p>
 
-<p>Com o <code class="highlighter-rouge">Setup</code> finalizado, você será redirecionado para a página inicial de administração, daqui em diante é só alegria. Pretendo criar novos tutoriais, mais pra frente, mostrando todo o poder que esse Firewall tem.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"CN=SRVLAB,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=SRVLAB-2016,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=laboratorio,DC=local"</span>
+</code></pre></div></div>
 
-<p><br />
-<img src="/files/images/articles/2017/2017-10-27-instalando-um-pfsense-do-zero/20.PNG" alt="enter image description here" />
-<br /></p>
+<h3 id="listando-usuários-e-suas-ous">Listando usuários e suas OUS</h3>
 
-<p>Por hoje é só galera, eu pretendo criar muitos outros ainda, mas isso vai vim com o tempo.</p>
+<p>Com o <code class="highlighter-rouge">DSQUERY</code> também é possível coletar os usuários e suas OUS</p>
 
-<p>\Abraço</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dsquery user
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"CN=krbtgt,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=Convidado,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=Administrador,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=backup,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=paulo,OU=Diretoria,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=pneto,OU=Diretoria,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=sousa,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=flavia,OU=Diretoria,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=gabriel,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=squid,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=sshd,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=cyg_server,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=root,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=andrey,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=diogo,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=eduardohenrique,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=rodrigo,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=marcio,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=fernandamel,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=marco,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=misael,OU=Suporte,DC=laboratorio,DC=local"</span>
+</code></pre></div></div>
+
+<h3 id="listando-dados-específicos-do-ad">Listando dados específicos do AD</h3>
+
+<p>Para que possamos listar dados específicos do AD, como nome completo, login, e-mail, etc…</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dsquery user | dsget user <span class="nt">-samid</span> <span class="nt">-display</span> <span class="nt">-tel</span> <span class="nt">-email</span> <span class="nt">-pwdneverexpires</span>
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  samid              display              tel    email    pwdneverexpires
+  krbtgt                                                  no
+  Convidado                                               <span class="nb">yes
+  </span>Administrador                                           <span class="nb">yes
+  </span>backup             backup                               <span class="nb">yes
+  </span>paulo              paulo                                <span class="nb">yes
+  </span>pneto              pneto                                <span class="nb">yes
+  </span>sousa              sousa                                <span class="nb">yes
+  </span>flavia             flavia                               <span class="nb">yes
+  </span>gabriel            gabriel                              <span class="nb">yes
+  </span>squid              squid                                <span class="nb">yes
+  </span>sshd                                                    no
+  cyg_server         Privileged server                    <span class="nb">yes
+  </span>root               root                                 <span class="nb">yes
+  </span>andrey             andrey                               <span class="nb">yes
+  </span>diogo              diogo                                <span class="nb">yes
+  </span>eduardohenrique    eduardohenrique                      <span class="nb">yes
+  </span>rodrigo            rodrigo                              <span class="nb">yes
+  </span>marcio             marcio                               <span class="nb">yes
+  </span>fernandamel        fernandamel                          <span class="nb">yes
+  </span>marco              marco                                <span class="nb">yes
+  </span>misael             misael                               <span class="nb">yes
+</span>dsget Com êxito
+</code></pre></div></div>
+
+<blockquote>
+  <p>Por padrão é possível receber informações de até 100 usuários, mas é da para obter mais resultando informando a quantidade que deseja:</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dsquery user <span class="nt">-limit</span> 300 | dsget user <span class="nt">-samid</span> <span class="nt">-display</span> <span class="nt">-tel</span> <span class="nt">-email</span> <span class="nt">-pwdneverexpires</span>
+</code></pre></div></div>
+
+<h3 id="listando-usuários-desabilitados">Listando usuários desabilitados</h3>
+
+<p>E continuando na jornada de coletar informações, também conseguimos listar usuários desabilitados.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dsquery user “dc<span class="o">=</span>laboratorio,dc<span class="o">=</span><span class="nb">local</span>” <span class="nt">-disabled</span>
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"CN=krbtgt,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=Convidado,OU=Suporte,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=squid,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=sshd,CN=Users,DC=laboratorio,DC=local"</span>
+<span class="s2">"CN=cyg_server,CN=Users,DC=laboratorio,DC=local"</span>
+</code></pre></div></div>
+
+<h3 id="listando-todos-os-computadores-já-registrados-no-domínio">Listando todos os computadores já registrados no domínio</h3>
+
+<p>Com a utilização do <code class="highlighter-rouge">WMIC</code> também é possível obter uma lista de todos os computadores registrados no domínio.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wmic /NAMESPACE:<span class="se">\\</span>root<span class="se">\d</span>irectory<span class="se">\l</span>dap PATH ds_computer GET ds_samaccountname
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DS_sAMAccountName
+SRVLAB-2016<span class="err">$</span>
+SRVLAB<span class="err">$</span>
+TKD-PC<span class="err">$</span>
+SUPORTENET6<span class="err">$</span>
+ALENOTE<span class="err">$</span>
+SUPORTE206-PC<span class="err">$</span>
+SUPORTE205-PC<span class="err">$</span>
+PAULO<span class="err">$</span>
+SUP-REMOTO2<span class="err">$</span>
+BIND-PC<span class="err">$</span>
+SRVHYPER-V<span class="err">$</span>
+FLAVIA<span class="err">$</span>
+PNETO<span class="err">$</span>
+SUPORTE201-PC<span class="err">$</span>
+FINANC<span class="err">$</span>
+SUPORTE202-PC<span class="err">$</span>
+NOTEFLA<span class="err">$</span>
+NOTEPAULO<span class="err">$</span>
+SUPORTE203<span class="err">$</span>
+SUPORTE202<span class="err">$</span>
+SUPORTE201<span class="err">$</span>
+SUPORTE-201<span class="err">$</span>
+SUPORTE204<span class="err">$</span>
+FERNANDA<span class="err">$</span>
+NOTESUP200<span class="err">$</span>
+SUPORTE-203<span class="err">$</span>
+SUPORTE-202<span class="err">$</span>
+SUPORTE999<span class="err">$</span>
+DESKTOP-200<span class="err">$</span>
+SUPORTE200<span class="err">$</span>
+</code></pre></div></div>
+
+<h3 id="grupos-criado-no-active-directory">Grupos criado no Active Directory</h3>
+
+<p>Para listar todos os grupos existentes no Active Directory</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wmic /NAMESPACE:\\root\directory\ldap PATH ds_group GET ds_samaccountname
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DS_sAMAccountName
+Operadores de configuração de rede
+Usuários de monitor de desempenho
+Usuários de log de desempenho
+Distributed COM - Usuários
+Operadores criptográficos
+Leitores de log de eventos
+Certificate Service DCOM Access
+Computadores do domínio
+Editores de certificados
+Usuários do domínio
+Convidados domínio
+Servidores RAS e IAS
+Criadores de confiança de floresta de entrada
+Servidores de licenças do Terminal Server
+Grupo de Replicação de Senha RODC Permitido
+Controladores de Domínio de Empresa Somente Leitura
+IIS_IUSRS
+Opers. de contas
+Operadores de cópia
+Duplicadores
+Opers. de impressão
+Opers. de servidores
+Controladores de Domínio Somente Leitura
+Controladores de domínio
+Convidados
+Administradores
+Proprietários criadores de diretiva de grupo
+Administradores de esquema
+Administradores de empresa
+Grupo de acesso de autorização Windows
+Grupo de Replicação de Senha RODC Negado
+Usuários
+Admins. do domínio
+Acesso compatível anterior ao Windows 2000
+Usuários da área de trabalho remota
+DnsAdmins
+DnsUpdateProxy
+Usuários DHCP
+Administradores DHCP
+SQLServerMSSQLServerADHelperUser$SERVIDOR
+SQLServer2005SQLBrowserUser$SERVIDOR
+SQLServer2005MSSQLUser$SERVIDOR$MICROSOFT##SSEE
+SQLServer2005MSFTEUser$SERVIDOR$MICROSOFT##SSEE
+Informadores WSUS
+Administradores WSUS
+ePO User Group
+bindsc
+diretoria
+Openfire
+financ
+imagens
+RDS Remote Access Servers
+RDS Endpoint Servers
+RDS Management Servers
+Administradores do Hyper-V
+Controladores de Domínio Clonáveis
+Operadores de Assistência a Controle de Acesso
+Usuários de Gerenciamento Remoto
+Protected Users
+</code></pre></div></div>
+
+<h3 id="listar-grupos-que-um-usuário-pertence">Listar grupos que um usuário pertence</h3>
+
+<p>Também é possível coletar os grupos que um usuário pertence</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dsquery user <span class="nt">-samid</span> andrey | dsget user <span class="nt">-memberof</span> | dsget group <span class="nt">-samid</span>
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  samid
+  Openfire
+  Administradores
+  Usuários <span class="k">do </span>domínio
+dsget Com êxito
+</code></pre></div></div>
+
+<h3 id="exportar-atributos-de-todos-os-usuários">Exportar atributos de todos os usuários</h3>
+
+<p>Para exportar os atributos com informações precisas e valiosas faça o seguinte</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dsquery <span class="k">*</span> <span class="nt">-limit</span> 0 <span class="nt">-filter</span> “&amp;<span class="o">(</span><span class="nv">objectClass</span><span class="o">=</span>User<span class="o">)(</span><span class="nv">objectCategory</span><span class="o">=</span>Person<span class="o">)</span>” <span class="nt">-attr</span> <span class="k">*</span>
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: krbtgt
+description: Conta de serviço do centro de distribuição de chaves
+distinguishedName: CN=krbtgt,CN=Users,DC=bind,DC=com,DC=br
+instanceType: 4
+whenCreated: 12/11/2010 09:59:52
+whenChanged: 05/29/2015 20:19:55
+uSNCreated: 8063
+memberOf: CN=Grupo de Replicação de Senha RODC Negado,CN=Users,DC=laboratorio,DC=local
+uSNChanged: 12294
+showInAdvancedViewOnly: TRUE
+name: krbtgt
+objectGUID: {F60A9851-66B2-4747-9434-EAFF1040769E}
+userAccountControl: 514
+codePage: 0
+countryCode: 0
+pwdLastSet: 129365351926816407
+primaryGroupID: 513
+objectSid: S-1-5-21-790824453-2479925881-3353036194-502
+adminCount: 1
+accountExpires: 9223372036854775807
+sAMAccountName: krbtgt
+sAMAccountType: 805306368
+servicePrincipalName: kadmin/changepw
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=bind,DC=com,DC=br
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 12/28/2016 12:54:07
+dSCorePropagationData: 01/01/1601 00:00:00
+msDS-SupportedEncryptionTypes: 0
+ADsPath: LDAP://srvlab.laboratorio.local/CN=krbtgt,CN=Users,DC=bind,DC=com,DC=br
+</code></pre></div></div>
+
+<h2 id="dicas">Dicas</h2>
+
+<p>Existem algumas maneiras, de evitar que usuários comuns tenha informações valiosas da sua rede:</p>
+
+<ul>
+  <li>Sempre faça auditoria de seus servidores</li>
+  <li>Certifique-se que todos os usuários do domínio tenham apenas ferramentas necessárias</li>
+  <li>Crie boas políticas de GPO evitando assim que o usuário tenha a liberdade de obter ferramentas ou coletar dados</li>
+</ul>
 
 
 							</div>
