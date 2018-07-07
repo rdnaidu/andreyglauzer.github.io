@@ -1382,3 +1382,74 @@ pre > code {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 16.666666666666664%;
   flex: 1 0 16.6666666667%; }
+
+input[type="text"] {
+  height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  font-family: "Lato";
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  cursor: pointer; }
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #efefef; }
+
+input[type="text"]:focus {
+  width: 16rem;
+  z-index: 1;
+  border-bottom: 1px solid #fff;
+  cursor: text; }
+
+input[type="submit"] {
+  height: 24px;
+  width: 68px;
+  display: inline-block;
+  background: url(/files/images/icons/magnifier-tool.png) center center no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: opacity .4s ease; }
+
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  -webkit-transition: 0.4s cubic-bezier(0.18, 0.98, 0.45, 1);
+  transition: 0.4s cubic-bezier(0.18, 0.98, 0.45, 1); }
+
+input[type="submit"]:hover {
+  opacity: 0.8; }
+
+@media only screen and (max-width: 48rem) {
+  form {
+    padding-bottom: 2rem; }
+
+  li.search {
+    margin-top: 2rem; } }
+#search-results li {
+  display: inline-block;
+  border-bottom: 1px solid #dbddde;
+  padding-bottom: 3rem; }
+
+ul#search-results li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: thick solid #4dba87;
+  padding-left: 1rem; }
