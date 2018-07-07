@@ -10,6 +10,12 @@
       <button role="button" id="menumobile" tabindex="1" aria-label="Abrir navegação principal" aria-controls="navigation" class="NavbarToggle"><span></span><span></span><span></span><span></span><span></span><span></span></button>
       <nav role="navigation" id="navigation" class="Navbar">
          <ul role="menu" class="Navbar__nav">
+            <li role="menuitem" class="Navbar__nav-item search">
+              <form action="/search" method="get">
+                <input type="text" id="search-box" name="query">
+                <input type="submit" value="search" type="submit">
+              </form>
+            </li>
             <li role="menuitem" class="Navbar__nav-item">
                <a href="/sobre" title="Sobre" role="link" class="{% if page.layout == 'about' %}Navbar__nav-link nuxt-link-exact-active nuxt-link-active{% else %}Navbar__nav-link{% endif %}">
                Sobre

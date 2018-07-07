@@ -1,6 +1,13 @@
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
-<script src="/files/js/NavbarToggle.js" type="text/javascript"></script>
-<script src="/files/js/NavMenu.js" type="text/javascript"></script>
+---
+layout: search
+title: Resultado de pesquisa
+description: Essa página é um resultado da pesquisa que você realizou.
+permalink: /search/
+---
+
+<h2>Resultados:</h2>
+<ul id="search-results"></ul>
+
 <script>
   window.store = {
     {% for post in site.posts %}
