@@ -26,11 +26,11 @@
                               <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                            </svg>
                         </strong>
-                        <a href="https://onedev.studio" target="_blank">{{ projeto.name }}</a><!---->
+                        <a href="{{ projeto.site }}" target="_blank">{{ projeto.name }}</a><!---->
                      </span>
                   </div>
                </div>
-               <figure class="project__thumbnail grid__column"><a href="{{ projeto.url }}" target="_blank" class="project__thumbnail-browser"><span class="project__thumbnail-browser-bar"><small>{{ projeto.url }}</small></span><img alt="Thumbnail do projeto: Onedev.studio" data-src="/images/uploads/onedev.studio.png" src="/files/images/projects/{{projeto.imagem}}" lazy="loaded"></a></figure>
+               <figure class="project__thumbnail grid__column"><a href="{{ projeto.url }}" target="_blank" class="project__thumbnail-browser"><span class="project__thumbnail-browser-bar"><small>{{ projeto.url }}</small></span><img alt="Thumbnail do projeto: {{projeto.name}}" data-src="/files/images/projects/{{projeto.imagem}}" src="/files/images/projects/{{projeto.imagem}}" lazy="loaded"></a></figure>
             </div>
          </div>
       </article>
